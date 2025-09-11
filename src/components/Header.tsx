@@ -15,8 +15,12 @@ const Header = () => {
       <header className="header">
         <div className="container mx-auto px-4 h-16 flex items-center justify-between">
           {/* Logo */}
-          <Link to="/" className="text-2xl font-bold text-primary">
-            agentiKM
+          <Link to="/" className="flex items-center">
+            <img 
+              src="/lovable-uploads/217b11ff-0615-4ef0-b1ca-7a2e366a4cca.png" 
+              alt="agentiKM Logo" 
+              className="h-8 w-auto"
+            />
           </Link>
 
           {/* Desktop Navigation */}
@@ -64,7 +68,13 @@ const Header = () => {
           <div className="relative h-full">
             {/* Header */}
             <div className="flex items-center justify-between">
-              <div className="mobile-nav-logo">agentiKM</div>
+              <div className="mobile-nav-logo">
+                <img 
+                  src="/lovable-uploads/217b11ff-0615-4ef0-b1ca-7a2e366a4cca.png" 
+                  alt="agentiKM Logo" 
+                  className="h-6 w-auto"
+                />
+              </div>
               <button
                 className="mobile-nav-close"
                 onClick={closeMobileMenu}
