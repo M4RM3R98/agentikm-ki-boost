@@ -17,9 +17,9 @@ const Header = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center">
             <img 
-              src="/lovable-uploads/217b11ff-0615-4ef0-b1ca-7a2e366a4cca.png" 
+              src="/lovable-uploads/01437a0e-fc51-4b74-9216-46cb2284bfe6.png" 
               alt="agentiKM Logo" 
-              className="h-8 w-auto"
+              className="h-12 w-auto"
             />
           </Link>
 
@@ -70,9 +70,9 @@ const Header = () => {
             <div className="flex items-center justify-between">
               <div className="mobile-nav-logo">
                 <img 
-                  src="/lovable-uploads/217b11ff-0615-4ef0-b1ca-7a2e366a4cca.png" 
+                  src="/lovable-uploads/01437a0e-fc51-4b74-9216-46cb2284bfe6.png" 
                   alt="agentiKM Logo" 
-                  className="h-6 w-auto"
+                  className="h-8 w-auto"
                 />
               </div>
               <button
