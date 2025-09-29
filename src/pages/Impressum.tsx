@@ -41,19 +41,6 @@ const Impressum = () => {
                 </div>
               </div>
 
-              {/* Berufsbezeichnung */}
-              <div className="service-card">
-                <h2 className="text-2xl font-bold mb-4">Berufsbezeichnung und berufsrechtliche Regelungen</h2>
-                <p>Berufsbezeichnung: Unternehmensberater</p>
-                <p>Die Berufsbezeichnung wurde in Deutschland verliehen.</p>
-              </div>
-
-              {/* Redaktionell verantwortlich */}
-              <div className="service-card">
-                <h2 className="text-2xl font-bold mb-4">Redaktionell verantwortlich</h2>
-                <p>Marvin Krämer</p>
-                <p>agentiKM</p>
-              </div>
 
               {/* EU-Streitschlichtung */}
               <div className="service-card">
