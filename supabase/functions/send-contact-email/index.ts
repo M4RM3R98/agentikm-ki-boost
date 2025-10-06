@@ -27,8 +27,10 @@ const handler = async (req: Request): Promise<Response> => {
     const { name, email, phone, company, message, privacyAccepted }: ContactEmailRequest = await req.json();
 
     console.log("Received contact form submission:", { name, email, phone, company });
+    console.log("RESEND_API_KEY available:", !!Deno.env.get("RESEND_API_KEY"));
 
     if (!privacyAccepted) {
+      console.error("Privacy policy not accepted");
       return new Response(
         JSON.stringify({ error: "Privacy policy must be accepted" }),
         {
@@ -38,6 +40,8 @@ const handler = async (req: Request): Promise<Response> => {
       );
     }
 
+    console.log("Attempting to send email via Resend...");
+    
     // Send email to agentiKM
     const emailResponse = await resend.emails.send({
       from: "agentiKM Kontaktformular <noreply@agentikm.de>",
@@ -55,7 +59,7 @@ const handler = async (req: Request): Promise<Response> => {
       `,
     });
 
-    console.log("Email sent successfully:", emailResponse);
+    console.log("Email sent successfully:", JSON.stringify(emailResponse));
 
     return new Response(JSON.stringify({ success: true, data: emailResponse }), {
       status: 200,
