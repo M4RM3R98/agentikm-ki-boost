@@ -40,7 +40,7 @@ const handler = async (req: Request): Promise<Response> => {
 
     // Send email to agentiKM
     const emailResponse = await resend.emails.send({
-      from: "agentiKM Kontaktformular <onboarding@resend.dev>",
+      from: "agentiKM Kontaktformular <noreply@agentikm.de>",
       to: ["kontakt@agentikm.de"],
       replyTo: email,
       subject: `Neue Kontaktanfrage von ${name}`,
