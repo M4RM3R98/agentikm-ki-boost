@@ -3,6 +3,7 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import SEO from '@/components/SEO';
 import { useToast } from '@/hooks/use-toast';
+import { supabase } from '@/integrations/supabase/client';
 
 const Kontakt = () => {
   const [formData, setFormData] = useState({
@@ -16,7 +17,7 @@ const Kontakt = () => {
   });
   const { toast } = useToast();
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     
     if (!formData.privacy_accepted) {
@@ -28,22 +29,44 @@ const Kontakt = () => {
       return;
     }
 
-    // In a real application, you would send this data to your backend
-    toast({
-      title: "Nachricht gesendet!",
-      description: "Wir melden uns innerhalb von 24 Stunden bei Ihnen.",
-    });
+    try {
+      // Send email via edge function
+      const { data, error } = await supabase.functions.invoke('send-contact-email', {
+        body: {
+          name: formData.name,
+          email: formData.email,
+          phone: formData.preferred_date,
+          company: formData.company,
+          message: `Rolle: ${formData.role || 'Nicht angegeben'}\n\nWunschtermin: ${formData.preferred_date || 'Flexibel'}\n\n${formData.message}`,
+          privacyAccepted: formData.privacy_accepted
+        }
+      });
 
-    // Reset form
-    setFormData({
-      name: '',
-      email: '',
-      company: '',
-      role: '',
-      message: '',
-      preferred_date: '',
-      privacy_accepted: false
-    });
+      if (error) throw error;
+
+      toast({
+        title: "Nachricht gesendet!",
+        description: "Wir melden uns innerhalb von 24 Stunden bei Ihnen.",
+      });
+
+      // Reset form
+      setFormData({
+        name: '',
+        email: '',
+        company: '',
+        role: '',
+        message: '',
+        preferred_date: '',
+        privacy_accepted: false
+      });
+    } catch (error) {
+      console.error('Error sending email:', error);
+      toast({
+        title: "Fehler",
+        description: "Beim Senden der Nachricht ist ein Fehler aufgetreten. Bitte versuchen Sie es erneut.",
+        variant: "destructive"
+      });
+    }
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
