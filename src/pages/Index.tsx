@@ -60,12 +60,12 @@ const Index = () => {
             <div className="benefits">
               <div className="text-center">
                 <div className="text-4xl mb-4">🔍</div>
-                <h3 className="text-xl font-semibold mb-3">Strukturierte Use-Case-Discovery</h3>
+                <h3 className="text-xl font-semibold mb-3">Strukturierte Use-Case-Identifikation</h3>
                 <p className="text-muted-foreground">Priorisierung nach Wirkung & Machbarkeit für maximalen ROI</p>
               </div>
               <div className="text-center">
                 <div className="text-4xl mb-4">🚀</div>
-                <h3 className="text-xl font-semibold mb-3">Enablement statt Abhängigkeiten</h3>
+                <h3 className="text-xl font-semibold mb-3">Befähigung statt Abhängigkeiten</h3>
                 <p className="text-muted-foreground">Mitarbeitende befähigen für nachhaltige KI-Kompetenz</p>
               </div>
               <div className="text-center">
@@ -113,86 +113,101 @@ const Index = () => {
             </p>
             <div className="services-grid">
               <div className="service-card text-left">
-                <h3 className="text-xl font-semibold mb-4">Use Case Discovery</h3>
+                <h3 className="text-xl font-semibold mb-4">Use Case Identifikation</h3>
                 <p className="text-muted-foreground mb-6">
-                  Systematische Identifikation und Bewertung von KI-Anwendungsfällen in Ihren Geschäftsprozessen für maximalen Impact.
+                  Systematische Identifikation und Bewertung von KI-Anwendungsfällen in Ihren Geschäftsprozessen. Wir analysieren Ihre bestehenden Abläufe und entdecken die wertvollsten Automatisierungspotentiale.
                 </p>
+                <h4 className="font-semibold mb-3">Was wir machen:</h4>
                 <ul className="space-y-2 mb-6">
                   <li className="flex items-start space-x-2">
-                    <span className="text-primary">•</span>
-                    <span className="text-sm">Prozess- und Datenaufnahme</span>
+                    <span className="text-primary">✓</span>
+                    <span className="text-sm">Detaillierte Prozess- und Datenaufnahme</span>
                   </li>
                   <li className="flex items-start space-x-2">
-                    <span className="text-primary">•</span>
-                    <span className="text-sm">Ideation-Sessions</span>
+                    <span className="text-primary">✓</span>
+                    <span className="text-sm">Entwicklung einer Priorisierungsmatrix (Wirkung × Aufwand)</span>
                   </li>
                   <li className="flex items-start space-x-2">
-                    <span className="text-primary">•</span>
-                    <span className="text-sm">Priorisierungs-Matrix</span>
+                    <span className="text-primary">✓</span>
+                    <span className="text-sm">Bewertung technischer Machbarkeit und ROI-Potential</span>
                   </li>
                   <li className="flex items-start space-x-2">
-                    <span className="text-primary">•</span>
-                    <span className="text-sm">Use-Case-Backlog</span>
+                    <span className="text-primary">✓</span>
+                    <span className="text-sm">Erstellung eines kuratierten Use-Case-Backlogs</span>
                   </li>
                 </ul>
+                <p className="font-semibold mb-2">Ihr Ergebnis:</p>
+                <p className="text-muted-foreground mb-6">
+                  Kuratierter Use-Case-Backlog inkl. ROI-Hypothesen – Eine priorisierte Roadmap mit den vielversprechendsten KI-Anwendungsfällen für Ihr Unternehmen.
+                </p>
                 <Link to="/kontakt" className="btn-primary">
-                  Mehr erfahren
+                  Jetzt starten
                 </Link>
               </div>
               
               <div className="service-card text-left">
                 <h3 className="text-xl font-semibold mb-4">Workshops</h3>
                 <p className="text-muted-foreground mb-6">
-                  Praxisorientierte Workshops für Management und Teams zur Entwicklung von KI-Kompetenzen und Quick-Wins.
+                  Praxisorientierte Schulungen für Management und Teams zur nachhaltigen KI-Kompetenzentwicklung. Von strategischen Grundlagen bis zu hands-on Anwendungen.
                 </p>
+                <h4 className="font-semibold mb-3">Was wir machen:</h4>
                 <ul className="space-y-2 mb-6">
                   <li className="flex items-start space-x-2">
-                    <span className="text-primary">•</span>
-                    <span className="text-sm">Management-Briefing</span>
+                    <span className="text-primary">✓</span>
+                    <span className="text-sm">Management-Briefing zu KI-Strategien und Potentialen</span>
                   </li>
                   <li className="flex items-start space-x-2">
-                    <span className="text-primary">•</span>
-                    <span className="text-sm">Discovery-Workshops</span>
+                    <span className="text-primary">✓</span>
+                    <span className="text-sm">Praxisübungen zu Prompting und Automatisierung</span>
                   </li>
                   <li className="flex items-start space-x-2">
-                    <span className="text-primary">•</span>
-                    <span className="text-sm">Hands-on-Sessions</span>
+                    <span className="text-primary">✓</span>
+                    <span className="text-sm">Generative KI-Grundlagen für alle Unternehmensbereiche</span>
                   </li>
                   <li className="flex items-start space-x-2">
-                    <span className="text-primary">•</span>
-                    <span className="text-sm">Gen-KI-Grundlagen</span>
+                    <span className="text-primary">✓</span>
+                    <span className="text-sm">Aufbau interner KI-Kompetenzen</span>
                   </li>
                 </ul>
+                <p className="font-semibold mb-2">Ihr Ergebnis:</p>
+                <p className="text-muted-foreground mb-6">
+                  Befähigte Teams + dokumentierte Artefakte – Ihre Mitarbeitenden können eigenständig KI-Tools einsetzen und haben alle Materialien für die Weiterarbeit.
+                </p>
                 <Link to="/kontakt" className="btn-primary">
-                  Mehr erfahren
+                  Workshop buchen
                 </Link>
               </div>
               
               <div className="service-card text-left">
-                <h3 className="text-xl font-semibold mb-4">Enablement</h3>
+                <h3 className="text-xl font-semibold mb-4">Befähigung</h3>
                 <p className="text-muted-foreground mb-6">
-                  Nachhaltige Befähigung Ihrer Teams für eigenständige KI-Implementierung und kontinuierliche Weiterentwicklung.
+                  Nachhaltige Befähigung Ihrer Organisation für eigenständige KI-Implementierung. Wir schaffen die Grundlagen für dauerhaften Erfolg ohne externe Abhängigkeiten.
                 </p>
+                <h4 className="font-semibold mb-3">Was wir machen:</h4>
                 <ul className="space-y-2 mb-6">
                   <li className="flex items-start space-x-2">
-                    <span className="text-primary">•</span>
-                    <span className="text-sm">KI-Leitplanken</span>
+                    <span className="text-primary">✓</span>
+                    <span className="text-sm">Entwicklung von Leitplanken und KI-Guidelines</span>
                   </li>
                   <li className="flex items-start space-x-2">
-                    <span className="text-primary">•</span>
-                    <span className="text-sm">Tool-Auswahl</span>
+                    <span className="text-primary">✓</span>
+                    <span className="text-sm">Strategische Toolauswahl und -bewertung</span>
                   </li>
                   <li className="flex items-start space-x-2">
-                    <span className="text-primary">•</span>
-                    <span className="text-sm">Quick-Win-Umsetzung</span>
+                    <span className="text-primary">✓</span>
+                    <span className="text-sm">Umsetzung von Quick-Wins und Pilotprojekten</span>
                   </li>
                   <li className="flex items-start space-x-2">
-                    <span className="text-primary">•</span>
-                    <span className="text-sm">Coaching & Support</span>
+                    <span className="text-primary">✓</span>
+                    <span className="text-sm">Internes Coaching und Mentoring-Programme</span>
                   </li>
                 </ul>
+                <p className="font-semibold mb-2">Ihr Ergebnis:</p>
+                <p className="text-muted-foreground mb-6">
+                  Eigenständig lauffähige KI-Piloten – Ihre Organisation kann KI-Projekte selbstständig planen, umsetzen und skalieren.
+                </p>
                 <Link to="/kontakt" className="btn-primary">
-                  Mehr erfahren
+                  Enablement starten
                 </Link>
               </div>
             </div>

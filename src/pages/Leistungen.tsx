@@ -53,36 +53,32 @@ const Leistungen = () => {
             <div className="services-grid">
               <div className="service-card">
                 <div className="text-4xl mb-4">🔍</div>
-                <h2 className="text-2xl font-bold mb-4">Use Case Discovery</h2>
+                <h2 className="text-2xl font-bold mb-4">Use Case Identifikation</h2>
                 <p className="text-muted-foreground mb-6">
-                  Systematische Identifikation und Bewertung von KI-Anwendungsfällen in Ihren Geschäftsprozessen. Wir analysieren Ihre Daten, Prozesse und Herausforderungen, um die wertvollsten KI-Opportunities zu identifizieren.
+                  Systematische Identifikation und Bewertung von KI-Anwendungsfällen in Ihren Geschäftsprozessen. Wir analysieren Ihre bestehenden Abläufe und entdecken die wertvollsten Automatisierungspotentiale.
                 </p>
                 <h4 className="font-semibold mb-3">Was wir machen:</h4>
                 <ul className="space-y-2 mb-6">
                   <li className="flex items-start space-x-2">
-                    <span className="text-primary">•</span>
-                    <span>Detaillierte Prozess- und Datenlandschafts-Aufnahme</span>
+                    <span className="text-primary">✓</span>
+                    <span>Detaillierte Prozess- und Datenaufnahme</span>
                   </li>
                   <li className="flex items-start space-x-2">
-                    <span className="text-primary">•</span>
-                    <span>Moderierte Ideation-Sessions mit Ihrem Team</span>
+                    <span className="text-primary">✓</span>
+                    <span>Entwicklung einer Priorisierungsmatrix (Wirkung × Aufwand)</span>
                   </li>
                   <li className="flex items-start space-x-2">
-                    <span className="text-primary">•</span>
-                    <span>Bewertung nach Wirkung × Machbarkeit × Aufwand</span>
+                    <span className="text-primary">✓</span>
+                    <span>Bewertung technischer Machbarkeit und ROI-Potential</span>
                   </li>
                   <li className="flex items-start space-x-2">
-                    <span className="text-primary">•</span>
-                    <span>Priorisierter Use-Case-Backlog mit ROI-Hypothesen</span>
-                  </li>
-                  <li className="flex items-start space-x-2">
-                    <span className="text-primary">•</span>
-                    <span>Roadmap für die schrittweise Umsetzung</span>
+                    <span className="text-primary">✓</span>
+                    <span>Erstellung eines kuratierten Use-Case-Backlogs</span>
                   </li>
                 </ul>
                 <p className="font-semibold mb-4">Ihr Ergebnis:</p>
                 <p className="text-muted-foreground mb-6">
-                  Ein klar priorisierter Backlog der wertvollsten KI-Use-Cases für Ihr Unternehmen mit konkreten ROI-Schätzungen und Umsetzungsplänen.
+                  Kuratierter Use-Case-Backlog inkl. ROI-Hypothesen – Eine priorisierte Roadmap mit den vielversprechendsten KI-Anwendungsfällen für Ihr Unternehmen.
                 </p>
                 <Link to="/kontakt" className="btn-primary">
                   Jetzt starten
@@ -93,34 +89,30 @@ const Leistungen = () => {
                 <div className="text-4xl mb-4">🎓</div>
                 <h2 className="text-2xl font-bold mb-4">Workshops</h2>
                 <p className="text-muted-foreground mb-6">
-                  Praxisorientierte Workshops für Management und Teams zur Entwicklung von KI-Kompetenzen. Von strategischen Überlegungen bis hin zu hands-on Prototyping – wir bringen Ihr Team auf Speed.
+                  Praxisorientierte Schulungen für Management und Teams zur nachhaltigen KI-Kompetenzentwicklung. Von strategischen Grundlagen bis zu hands-on Anwendungen.
                 </p>
                 <h4 className="font-semibold mb-3">Was wir machen:</h4>
                 <ul className="space-y-2 mb-6">
                   <li className="flex items-start space-x-2">
-                    <span className="text-primary">•</span>
-                    <span>Management-Briefing zu KI-Strategien und -Chancen</span>
+                    <span className="text-primary">✓</span>
+                    <span>Management-Briefing zu KI-Strategien und Potentialen</span>
                   </li>
                   <li className="flex items-start space-x-2">
-                    <span className="text-primary">•</span>
-                    <span>Discovery-Workshops zur Use-Case-Identifikation</span>
+                    <span className="text-primary">✓</span>
+                    <span>Praxisübungen zu Prompting und Automatisierung</span>
                   </li>
                   <li className="flex items-start space-x-2">
-                    <span className="text-primary">•</span>
-                    <span>Hands-on-Sessions mit Tools und Prototyping</span>
+                    <span className="text-primary">✓</span>
+                    <span>Generative KI-Grundlagen für alle Unternehmensbereiche</span>
                   </li>
                   <li className="flex items-start space-x-2">
-                    <span className="text-primary">•</span>
-                    <span>Generative KI Grundlagen für alle Mitarbeitenden</span>
-                  </li>
-                  <li className="flex items-start space-x-2">
-                    <span className="text-primary">•</span>
-                    <span>Entwicklung von KI-Governance und -Richtlinien</span>
+                    <span className="text-primary">✓</span>
+                    <span>Aufbau interner KI-Kompetenzen</span>
                   </li>
                 </ul>
                 <p className="font-semibold mb-4">Ihr Ergebnis:</p>
                 <p className="text-muted-foreground mb-6">
-                  KI-kompetente Teams mit praktischer Erfahrung und ersten funktionsfähigen Prototypen sowie klaren Richtlinien für den KI-Einsatz.
+                  Befähigte Teams + dokumentierte Artefakte – Ihre Mitarbeitenden können eigenständig KI-Tools einsetzen und haben alle Materialien für die Weiterarbeit.
                 </p>
                 <Link to="/kontakt" className="btn-primary">
                   Workshop buchen
@@ -129,36 +121,32 @@ const Leistungen = () => {
 
               <div className="service-card">
                 <div className="text-4xl mb-4">🚀</div>
-                <h2 className="text-2xl font-bold mb-4">Enablement</h2>
+                <h2 className="text-2xl font-bold mb-4">Befähigung</h2>
                 <p className="text-muted-foreground mb-6">
-                  Nachhaltige Befähigung Ihrer Teams für eigenständige KI-Implementierung. Wir begleiten Sie bei der Umsetzung der ersten Use-Cases und stellen sicher, dass Ihr Team selbstständig weitermachen kann.
+                  Nachhaltige Befähigung Ihrer Organisation für eigenständige KI-Implementierung. Wir schaffen die Grundlagen für dauerhaften Erfolg ohne externe Abhängigkeiten.
                 </p>
                 <h4 className="font-semibold mb-3">Was wir machen:</h4>
                 <ul className="space-y-2 mb-6">
                   <li className="flex items-start space-x-2">
-                    <span className="text-primary">•</span>
-                    <span>Entwicklung von KI-Leitplanken und -Governance</span>
+                    <span className="text-primary">✓</span>
+                    <span>Entwicklung von Leitplanken und KI-Guidelines</span>
                   </li>
                   <li className="flex items-start space-x-2">
-                    <span className="text-primary">•</span>
-                    <span>Tool-Evaluierung und -Auswahl für Ihre Anforderungen</span>
+                    <span className="text-primary">✓</span>
+                    <span>Strategische Toolauswahl und -bewertung</span>
                   </li>
                   <li className="flex items-start space-x-2">
-                    <span className="text-primary">•</span>
-                    <span>Begleitete Umsetzung der ersten Quick-Win Use-Cases</span>
+                    <span className="text-primary">✓</span>
+                    <span>Umsetzung von Quick-Wins und Pilotprojekten</span>
                   </li>
                   <li className="flex items-start space-x-2">
-                    <span className="text-primary">•</span>
-                    <span>Training und Coaching für interne Champions</span>
-                  </li>
-                  <li className="flex items-start space-x-2">
-                    <span className="text-primary">•</span>
-                    <span>Aufbau interner KI-Kompetenzen und -Prozesse</span>
+                    <span className="text-primary">✓</span>
+                    <span>Internes Coaching und Mentoring-Programme</span>
                   </li>
                 </ul>
                 <p className="font-semibold mb-4">Ihr Ergebnis:</p>
                 <p className="text-muted-foreground mb-6">
-                  Selbstständig handlungsfähige Teams mit produktiven KI-Anwendungen und der Kompetenz für kontinuierliche Weiterentwicklung.
+                  Eigenständig lauffähige KI-Piloten – Ihre Organisation kann KI-Projekte selbstständig planen, umsetzen und skalieren.
                 </p>
                 <Link to="/kontakt" className="btn-primary">
                   Enablement starten

@@ -339,7 +339,7 @@ const Kontakt = () => {
                 <p className="text-muted-foreground mb-4 italic">
                   "Der Workshop hat unserem Team die Augen geöffnet. Wir sparen jetzt 3 Stunden pro Tag durch simple KI-Automatisierungen."
                 </p>
-                <p className="font-semibold">Michael R., IT-Leiter</p>
+                <p className="font-semibold">Michael R., Geschäftsführer</p>
                 <p className="text-sm text-muted-foreground">Produktionsunternehmen</p>
               </div>
             </div>
